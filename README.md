@@ -26,7 +26,7 @@ pip install python-daikin-altherma
 
   download file: daikin_wrap.sql
 
-## 2.2 Create function mycron.py_daikin('IP_NUMBER)
+## 2.2 Create function mycron.py_daikin('IP_NUMBER')
 
   download file: daikin_function.sql
   
