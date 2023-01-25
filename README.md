@@ -3,6 +3,7 @@ Download data from Daikin Altherma to Postgres DB using PLPython
 
 1. Instal Python Altherma
 https://pypi.org/project/python-daikin-altherma/
+
 pip install python-daikin-altherma
 
 1.1 add lines to __init__.py:
