@@ -1,7 +1,7 @@
 # PLPython-Daikin-Altherma
 Download data from Daikin Altherma to Postgres DB using PLPython
 
-## 1. Instal Python Altherma
+## 1. Instal Python Daikin-Altherma heat pump
 https://pypi.org/project/python-daikin-altherma/
 
 pip install python-daikin-altherma
