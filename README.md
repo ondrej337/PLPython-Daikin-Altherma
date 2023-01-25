@@ -3,7 +3,8 @@
 
 ## 1. Instal Python Daikin-Altherma heat pump
    https://pypi.org/project/python-daikin-altherma/
-    pip install python-daikin-altherma
+
+     pip install python-daikin-altherma
 
 ## 1.1 add lines to __init__.py:
 
@@ -30,20 +31,26 @@
  download file: daikin_function.sql
   
 ## 2.3 Call function:
+ Call plpython function to copy date to dB:
 
   SELECT mycron.py_daikin('192.168.0.100');
   
+
 ## 3. PGcron job:
     
    Create JOB:
+
     SELECT cron.schedule ('Daikin_wrap','15,45 * * * *',$$select mycron.py_daikin('192.168.0.100')$$);
 
    Unselect from cron: 13->id_job:
+
     select cron.unschedule(13); 
     
    Table of the created jobs:    
+
     SELECT * FROM cron.job;
     
    History of jobs run:  
+
     select * from cron.job_run_details order by runid desc;
 
