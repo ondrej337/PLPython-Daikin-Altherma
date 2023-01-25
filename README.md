@@ -44,6 +44,6 @@
     Table of created jobs:    
     SELECT * FROM cron.job;
     
-    History of run jobs:  
+    History of jobs run:  
     select * from cron.job_run_details order by runid desc;
 
