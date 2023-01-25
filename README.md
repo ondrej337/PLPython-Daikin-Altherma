@@ -39,7 +39,7 @@ pip install python-daikin-altherma
     CREATE EXTENSION pg_cron;
     
     Create JOB:
-    SELECT cron.schedule ('Daikin_wrap','15,45 * * * *',$$select mycron.py_daikin('192.168.0.107')$$);
+    SELECT cron.schedule ('Daikin_wrap','15,45 * * * *',$$select mycron.py_daikin('192.168.0.100')$$);
 
     Unselect from cron: 13->id_job:
     select cron.unschedule(13); 
