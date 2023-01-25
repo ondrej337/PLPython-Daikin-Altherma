@@ -3,8 +3,7 @@
 
 ## 1. Instal Python Daikin-Altherma heat pump
     https://pypi.org/project/python-daikin-altherma/
-
-pip install python-daikin-altherma
+    pip install python-daikin-altherma
 
 ## 1.1 add lines to __init__.py:
 
