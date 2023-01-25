@@ -1,2 +1,2 @@
 # PLPython-Daikin-Altherma
-Download date from Daikin Altherma to Postgress DB using PLPython
+Download data from Daikin Altherma to Postgress DB using PLPython
