@@ -29,7 +29,7 @@
   
 ## 2.3 Call function:
 
- Call plpython function to copy date to dB:
+ Call plpython function to copy data to dB:
 
     SELECT mycron.py_daikin('192.168.0.100');
   
