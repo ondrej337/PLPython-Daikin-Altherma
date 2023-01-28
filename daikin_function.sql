@@ -20,7 +20,7 @@ try:
   plan = plpy.prepare("INSERT INTO daikin.daikin_wrap(adapter_model,outdoor_temperature,tank_temperature,leaving_water_temperature,power_state,power_consumption,tank_consumption) VALUES ($1,$2,$3,$4,$5,$6,$7)", ["text", "text","text", "text","text","JSON","JSON"])
   plpy.execute(plan, [ad.adapter_model,ad.outdoor_temperature,ad.tank_temperature,ad.leaving_water_temperature,ad.power_state,ad.power_consumption,ad.tank_consumption])
 except Exception as ex:
-  plpy.error('ERROR',ex)
+  plpy.error(ex)
 $BODY$
   LANGUAGE plpython3u VOLATILE
   COST 100
